@@ -1,0 +1,23 @@
+{
+  "background_color": "#364458",
+  "description": "Com interface simples e minimalista, o Newtion une o melhor do mundo de editores de texto e minimalismo. A premissa é ser direto ao ponto. Sem distrações, agrupando o necessário para um bom editor de texto. Este é um projeto open-source em sua versão inicial. Futuramente novas features serão adicionadas.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Newtion",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Newtion",
+  "start_url": "/",
+  "theme_color": "#364458",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "https://img.icons8.com/ios/250/000000/brain.png",
+      "type": "image/png",
+      "sizes": "250x250"
+    }
+  ],
+  "shortcuts": [],
+  "id": "newtion"
+}
