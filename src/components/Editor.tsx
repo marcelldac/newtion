@@ -5,7 +5,7 @@ import {
   FloatingMenu,
 } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { initialContent } from "./initialContent";
+import { initialContent } from "../utils/initialContent";
 import {
   RxFontBold,
   RxFontItalic,
