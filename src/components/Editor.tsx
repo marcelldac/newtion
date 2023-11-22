@@ -42,16 +42,28 @@ export default function Editor() {
             Comment
           </BubbleButton>
           <div className="flex items-center">
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleBold().run()}
+              data-active={editor.isActive("bold")}
+            >
               <RxFontBold className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleItalic().run()}
+              data-active={editor.isActive("italic")}
+            >
               <RxFontItalic className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleStrike().run()}
+              data-active={editor.isActive("strike")}
+            >
               <RxStrikethrough className="w-4 h-4" />
             </BubbleButton>
-            <BubbleButton>
+            <BubbleButton
+              onClick={() => editor.chain().focus().toggleCode().run()}
+              data-active={editor.isActive("code")}
+            >
               <RxCode className="w-4 h-4" />
             </BubbleButton>
           </div>
