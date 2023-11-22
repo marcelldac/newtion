@@ -10,7 +10,23 @@
   "start_url": "/",
   "theme_color": "#364458",
   "categories": [],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "/screnshots/screenshot_1.png",
+      "type": "image/png",
+      "sizes": "1920x882"
+    },
+    {
+      "src": "/screnshots/screenshot_2.png",
+      "type": "image/png",
+      "sizes": "1920x882"
+    },
+    {
+      "src": "/screnshots/screenshot_3.png",
+      "type": "image/png",
+      "sizes": "1920x882"
+    }
+  ],
   "icons": [
     {
       "src": "https://img.icons8.com/ios/250/000000/brain.png",
