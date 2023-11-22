@@ -8,6 +8,11 @@ export default function Editor(props: EditorProps) {
   const editor = useEditor({
     extensions: [StarterKit],
     content: initialContent,
+    editorProps: {
+      attributes: {
+        class: "outline-none",
+      },
+    },
   });
 
   return (
