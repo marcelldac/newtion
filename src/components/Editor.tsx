@@ -25,9 +25,9 @@ export default function Editor() {
         class: "outline-none",
       },
     },
-    onUpdate(editor) {
+    /* onUpdate(editor) {
       editor.editor.getJSON;
-    },
+    }, */
   });
 
   return (
