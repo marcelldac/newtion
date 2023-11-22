@@ -1,3 +1,5 @@
+import Editor from "./components/Editor";
+
 function App() {
   return (
     <div className="min-h-screen p-8 text-zinc-900 bg-gradient-to-r  from-pink-300 via-purple-300 to-indigo-400">
@@ -10,15 +12,7 @@ function App() {
           </div>
         </aside>
         <main className="p-4">
-          <div className="max-w-[700px] mx-auto pt-16 prose">
-            <h1>Meu Notion</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              quis atque deleniti cumque modi rem consequuntur, esse nesciunt
-              debitis natus nobis odio nam reiciendis. Similique impedit vero
-              eum obcaecati blanditiis?
-            </p>
-          </div>
+          <Editor />
         </main>
       </div>
     </div>
