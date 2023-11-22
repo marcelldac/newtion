@@ -6,6 +6,8 @@ import {
   RxFontItalic,
   RxStrikethrough,
   RxCode,
+  RxChevronDown,
+  RxChatBubble,
 } from "react-icons/rx";
 import BubbleButton from "./BubbleButton";
 
@@ -32,17 +34,27 @@ export default function Editor() {
           editor={editor}
         >
           <BubbleButton>
-            <RxFontBold className="w-4 h-4" />
+            Text
+            <RxChevronDown className="w-4 h-4" />
           </BubbleButton>
           <BubbleButton>
-            <RxFontItalic className="w-4 h-4" />
+            <RxChatBubble className="w-4 h-4" />
+            Comment
           </BubbleButton>
-          <BubbleButton>
-            <RxStrikethrough className="w-4 h-4" />
-          </BubbleButton>
-          <BubbleButton>
-            <RxCode className="w-4 h-4" />
-          </BubbleButton>
+          <div className="flex items-center">
+            <BubbleButton>
+              <RxFontBold className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxFontItalic className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxStrikethrough className="w-4 h-4" />
+            </BubbleButton>
+            <BubbleButton>
+              <RxCode className="w-4 h-4" />
+            </BubbleButton>
+          </div>
         </BubbleMenu>
       )}
     </>
