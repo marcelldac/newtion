@@ -1,10 +1,8 @@
-import { EditorContent, useEditor } from "@tiptap/react";
+import { EditorContent, useEditor, BubbleMenu } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import { initialContent } from "./initialContent";
 
-export interface EditorProps {}
-
-export default function Editor(props: EditorProps) {
+export default function Editor() {
   const editor = useEditor({
     extensions: [StarterKit],
     content: initialContent,
@@ -16,9 +14,16 @@ export default function Editor(props: EditorProps) {
   });
 
   return (
-    <EditorContent
-      editor={editor}
-      className="max-w-[700px] mx-auto pt-16 prose"
-    />
+    <>
+      <EditorContent
+        editor={editor}
+        className="max-w-[700px] mx-auto pt-16 prose prose-violet"
+      />
+      {editor && (
+        <BubbleMenu editor={editor}>
+          <button>Bold</button>
+        </BubbleMenu>
+      )}
+    </>
   );
 }
