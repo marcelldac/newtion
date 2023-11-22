@@ -25,6 +25,9 @@ export default function Editor() {
         class: "outline-none",
       },
     },
+    onUpdate(editor) {
+      editor.editor.getJSON;
+    },
   });
 
   return (
@@ -35,6 +38,7 @@ export default function Editor() {
       />
       {editor && (
         <FloatingMenu
+          className="bg-zinc-200 py-2 px-1 shadow-xl border gap-1 border-zinc-300 shadow-white/20 rounded-lg overflow-hidden flex flex-col"
           editor={editor}
           shouldShow={({ state }) => {
             const { $from } = state.selection;
@@ -43,7 +47,35 @@ export default function Editor() {
             return currentLineText == "//";
           }}
         >
-          asd
+          {/* <button className="flex items-center gap-2 p-1 rounded min-g-[280px] hover:bg-zinc-600">
+            <img
+              src="http://www.notion.so/images/blocks/text/en-US.png"
+              alt="Text"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm">Text</span>
+              <span className="text-xs text-zinc-400">
+                Just Start Writing with plain text.
+              </span>
+            </div>
+          </button> */}
+          <button
+            className="flex items-center gap-2 p-1 rounded min-g-[280px] hover:bg-zinc-600"
+            onClick={() => {
+              editor.chain().focus().toggleHeading({ level: 1 }).run();
+            }}
+          >
+            <img
+              src="http://www.notion.so/images/blocks/header.57a7576a.png"
+              alt="Heading"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm">Heading 1</span>
+              <span className="text-xs text-zinc-400">Big section heading</span>
+            </div>
+          </button>
         </FloatingMenu>
       )}
       {editor && (
