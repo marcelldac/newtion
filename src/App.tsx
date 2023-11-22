@@ -2,7 +2,7 @@ import Editor from "./components/Editor";
 
 function App() {
   return (
-    <div className="min-h-screen p-8 text-zinc-900 bg-gradient-to-r  from-pink-300 via-purple-300 to-indigo-400">
+    <div className="min-h-screen p-8 text-zinc-900 bg-gradient-to-r  from-slate-600 via-slate-700 to-slate-800">
       <div className="bg-white w-[1100px] mx-auto rounded-xl min-h-[700px] shadow-sm border-black/20 overflow-hidden">
         {/* <aside className="bg-zinc-50 border-r border-r-zinc-100 p-4">
           <div className="flex gap-2 group">
