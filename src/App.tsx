@@ -9,7 +9,17 @@ function App() {
             <button className="w-3 h-3 rounded-full bg-green-400" />
           </div>
         </aside>
-        <main className="p-4"></main>
+        <main className="p-4">
+          <div className="max-w-[700px] mx-auto pt-16 prose">
+            <h1>Meu Notion</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              quis atque deleniti cumque modi rem consequuntur, esse nesciunt
+              debitis natus nobis odio nam reiciendis. Similique impedit vero
+              eum obcaecati blanditiis?
+            </p>
+          </div>
+        </main>
       </div>
     </div>
   );
