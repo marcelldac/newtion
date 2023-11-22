@@ -1,4 +1,9 @@
-import { EditorContent, useEditor, BubbleMenu } from "@tiptap/react";
+import {
+  EditorContent,
+  useEditor,
+  BubbleMenu,
+  FloatingMenu,
+} from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import { initialContent } from "./initialContent";
 import {
@@ -28,6 +33,19 @@ export default function Editor() {
         editor={editor}
         className="max-w-[700px] mx-auto pt-16 prose prose-violet"
       />
+      {editor && (
+        <FloatingMenu
+          editor={editor}
+          shouldShow={({ state }) => {
+            const { $from } = state.selection;
+            const currentLineText = $from.nodeBefore?.textContent;
+
+            return currentLineText == "//";
+          }}
+        >
+          asd
+        </FloatingMenu>
+      )}
       {editor && (
         <BubbleMenu
           className="bg-zinc-200 shadow-xl border border-zinc-300 shadow-white/20 rounded-lg overflow-hidden flex divide-x divide-x-zinc-600 "
