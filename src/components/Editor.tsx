@@ -11,8 +11,8 @@ import {
   RxFontItalic,
   RxStrikethrough,
   RxCode,
-  RxChevronDown,
-  RxChatBubble,
+  /* RxChevronDown,
+  RxChatBubble, */
 } from "react-icons/rx";
 import BubbleButton from "./BubbleButton";
 
@@ -83,14 +83,14 @@ export default function Editor() {
           className="bg-zinc-200 shadow-xl border border-zinc-300 shadow-white/20 rounded-lg overflow-hidden flex divide-x divide-x-zinc-600 "
           editor={editor}
         >
-          <BubbleButton>
+          {/* <BubbleButton>
             Text
             <RxChevronDown className="w-4 h-4" />
           </BubbleButton>
           <BubbleButton>
             <RxChatBubble className="w-4 h-4" />
             Comment
-          </BubbleButton>
+          </BubbleButton> */}
           <div className="flex items-center">
             <BubbleButton
               onClick={() => editor.chain().focus().toggleBold().run()}
